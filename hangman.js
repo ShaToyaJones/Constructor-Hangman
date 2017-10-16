@@ -1,43 +1,43 @@
 *****This is a game of Hangman using the command line and constructor functions.*****
 
 //Create a Word constructor function in its own file.
-	//File has been created.
+	//***update***File has been created.
 
 
 //Create a Letter constructor function in its own file.
-	//File has been created.
+	//***update***File has been created.
 
 
 //Export the Word and Letter files.
 
 
 
-*****Hangman Pseudocode*****
+
+*****Hangman Game Pseudocode*****
 //User is created/create a user.
 
 
 //The body parts of the hangman are needed:
 	//head
-	//neck
 	//body
-	//left arm
-	//right arm
 	//left leg
 	//right leg
-		//game over
+	//left arm
+	//right arm
+		//game over--->you lose!!!
 
 
 //Start the game.
 	//A word is randomly selected.
 		//possibly based on a category.
-			//Let the user know how many letters the word is.
+			//Let the user know how many letters the word contains.
 
 
+//The user guesses a letter.
 
-//User guesses a letter.
 
-
-//The letter that the user guesses is displayed in a container.
+//The letter that the user guesses is saved in a container. 
+	//***Display the letter the user guesses.
 
 
 //The application checks to see if the letter chosen is apart of the word.
