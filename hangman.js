@@ -1,8 +1,6 @@
-*****This is a game of Hangman using the command line and constructor functions.*****
+// *****This is a game of Hangman using the command line and constructor functions.*****
 
 var fs = require("fs");
-var Word = require("./Word");
-var Letter = require("./Letter");
 
 //Require npm Prompt package
 var prompt = require("prompt");
@@ -21,28 +19,16 @@ var blanksAndSuccess = [];
 //will hold the users wrong guesses.
 var wrongGuesses = [];
 
-//Create a Word constructor function in its own file.
-	//***update***File has been created.
-var Word = function() {
-	this.Word = word;
 
-	
-	}
-};
 
-//Create a Letter constructor function in its own file.
-	//***update***File has been created.
-var Letter = function() {
-	this.Letter = letter;
 
-};
 
 //Export the Word and Letter files.
 
 
 
 
-*****Hangman Game Pseudocode*****
+// *****Hangman Game Pseudocode*****
 //User is created/create a user.
 // Start the prompt 
 prompt.start();
@@ -56,7 +42,7 @@ prompt.get(["username"], function (err, result) {
 });
 
 //You get 9 guesses:
-		//game over--->you lose!!!
+		//Then game over--->you lose!!!
 
 
 //Start the game.
