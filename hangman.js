@@ -1,12 +1,41 @@
 *****This is a game of Hangman using the command line and constructor functions.*****
 
+var fs = require("fs");
+var Word = require("./Word");
+var Letter = require("./Letter");
+
+//Require npm Prompt package
+var prompt = require("prompt");
+ 
+//game variables 
+var wordList = ["pepsi", "clothes", "playstation", "vacation", "technology"];
+
+//holds solutions
+var chosenWord = "";
+//place holder for the letters chosen by user.
+var lettersInChosenWord = [];
+//blanks to display to user ***Unsure if this is needed.
+var numBlanks = 0;
+//displays the blanks and the chosen letters.
+var blanksAndSuccess = [];
+//will hold the users wrong guesses.
+var wrongGuesses = [];
+
 //Create a Word constructor function in its own file.
 	//***update***File has been created.
+var Word = function() {
+	this.Word = word;
 
+	
+	}
+};
 
 //Create a Letter constructor function in its own file.
 	//***update***File has been created.
+var Letter = function() {
+	this.Letter = letter;
 
+};
 
 //Export the Word and Letter files.
 
@@ -15,15 +44,18 @@
 
 *****Hangman Game Pseudocode*****
 //User is created/create a user.
+// Start the prompt 
+prompt.start();
+ 
+// Get one property from the user: username 
+prompt.get(["username"], function (err, result) {
+    
+// Log the results.     
+   console.log("Command-line input received:");
+   console.log("  username: " + result.username);
+});
 
-
-//The body parts of the hangman are needed:
-	//head
-	//body
-	//left leg
-	//right leg
-	//left arm
-	//right arm
+//You get 9 guesses:
 		//game over--->you lose!!!
 
 
@@ -44,7 +76,7 @@
 	//if the letter is apart of the word
 			//the letter is displayed in its correct position of the word.
 		//else
-			//one part of the hangmans body is revealed.
+			//minus one from the guessesLeft
 
 //Keep track of the users remaining guesses.
 	//possibly display them to the user after each incorrect guess.
