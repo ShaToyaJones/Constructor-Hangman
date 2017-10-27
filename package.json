@@ -1,0 +1,19 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "description": "hangman constructor game using node.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShaToyaJones/Constructor-Hangman.git"
+  },
+  "author": "ShaToya Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShaToyaJones/Constructor-Hangman/issues"
+  },
+  "homepage": "https://github.com/ShaToyaJones/Constructor-Hangman#readme"
+}
